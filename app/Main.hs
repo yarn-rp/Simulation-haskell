@@ -1,6 +1,6 @@
 module Main where
 
-import Simulation
+import Simulation ( environment, simEnvironment, cleanPercent )
 import Environment
 
 main :: IO ()

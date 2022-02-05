@@ -1,15 +1,16 @@
 module Environment where 
 
 import Data.List ( sortOn )
-import Element
-    ( Element(Bot, EmptyCell, Corral, Kid, Obstacle, pos),
+
+import Core.Utils
+    ( removeItem, pickRandomInt, pickRandom, (|>), headSafe )
+import Src.Element
+    ( Element(BotAgentV2, EmptyCell, Corral, Kid, Obstacle, pos),
       Position,
       first,
       second,
       isNear,
-      isElementAtPosition )
-import Utils
-    ( removeItem, pickRandomInt, pickRandom, (|>), headSafe )
+      isElementAtPosition ) 
 
 data Environment
   = Environment {
@@ -129,7 +130,7 @@ populateObstacles environment
 -------------------------------------------------------- Bots Population --------------------------------------------------------
 createBot:: Environment -> Environment
 createBot environment = do
-    let emptyCell = pickRandom (empties environment) in environment {empties = removeItem emptyCell (empties environment), bots = bots environment ++ [Bot (first emptyCell, second emptyCell)] }
+    let emptyCell = pickRandom (empties environment) in environment {empties = removeItem emptyCell (empties environment), bots = bots environment ++ [BotAgentV2 (first emptyCell, second emptyCell)] }
 
 
 

@@ -1,7 +1,7 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-module Element where 
+module Src.Element where 
 
-import Utils
+import Core.Utils
 import Data.Bifunctor (bimap)
 type Position = (Int,Int)
 

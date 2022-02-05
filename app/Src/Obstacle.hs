@@ -1,10 +1,10 @@
-module Obstacle (move)  where 
+module Src.Obstacle (move)  where 
 
 import Environment
     ( Environment(empties, obstacles), getElementAtPosition )
-import Element
+import Src.Element
     ( Direction, Element(Obstacle, EmptyCell, pos), Position, add )
-import Utils ( removeItem )
+import Core.Utils ( removeItem )
 
 tryGoToPosition:: Environment -> Element -> Position -> Environment
 tryGoToPosition environment obstacle position = let element = getElementAtPosition environment position in

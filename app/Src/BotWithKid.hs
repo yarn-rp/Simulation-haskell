@@ -1,20 +1,20 @@
-module BotWithKid where 
+module Src.BotWithKid where 
 import Environment
     ( Environment(dirts, empties, jails, botsWithKid, bots,
                   kidsInJail),
       getElementAtPosition )
-import Element
+import Src.Element
     ( isDirtInt ,Element( Corral, BotWithKid, Bot, KidInJail, EmptyCell, Dirt,
               pos),
       Position )
-import Utils ( removeItem, manhattanDistance, (|>), headSafe )
+import Core.Utils ( removeItem, manhattanDistance, (|>), headSafe )
 import Data.List ( sortOn )
-import BFS ( bfsSearch )
+import Core.Bfs ( bfsSearch )
 
 
 moveAll:: Environment -> Environment
 moveAll environment = 
-    foldl BotWithKid.move environment (botsWithKid environment)
+    foldl Src.BotWithKid.move environment (botsWithKid environment)
 
 sortTuplesDistances :: Ord a1 => (a2, a1) -> (a3, a1) -> Ordering
 sortTuplesDistances (a1, b1) (a2, b2) = compare b1 b2
@@ -79,7 +79,7 @@ dirtyness:: Environment -> [Position] -> Int
 dirtyness env path = sum (map (\a -> isDirtInt (getElementAtPosition env a)) path)
 
 shortestPathToElement:: Environment -> Position -> Element -> [Position]
-shortestPathToElement env position element= bfsSearch env position BotWithKid.isWalkable (pos element) 
+shortestPathToElement env position element= bfsSearch env position Src.BotWithKid.isWalkable (pos element) 
 
 isWalkable:: Element-> Bool 
 isWalkable element = case (element) of

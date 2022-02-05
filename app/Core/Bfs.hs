@@ -1,4 +1,4 @@
-module BFS where
+module Core.Bfs where
 
 import           Control.Monad.State
 import qualified Data.Array as A
@@ -7,10 +7,10 @@ import           Data.Maybe (catMaybes)
 import qualified Data.Sequence as S
 import qualified Data.Set as Set
 import Data.List
-import Element ( Element(Dirt), Position )
+import Src.Element ( Element(Dirt), Position )
 import Environment
     ( Environment(width, height), getElementAtPosition )
-import Utils
+import Core.Utils
 
 type Grid = Environment
 
@@ -50,17 +50,14 @@ isWalkable':: Environment -> Position  -> (Element -> Bool)-> Bool
 isWalkable' env pos isWalkableCondition = let element = getElementAtPosition env pos in
     maybe False isWalkableCondition element
 
--- isValidPosition:: Environment -> Position -> Position -> Bool
--- isValidPosition env currentPos posiblePos = isPosNear currentPos posiblePos && (isWalkable' env posiblePos)
-
 putDirtFirst:: Environment -> Position -> Ordering
 putDirtFirst env pos =
   let element = getElementAtPosition env pos in
     case element of 
         Nothing -> LT
-        Just element -> case (element) of
+        Just element -> case element of
             (Dirt(_,_)) -> GT
-            (_) -> LT
+            _ -> LT
 
 getValidNeighbors :: Position -> Grid -> (Element->Bool) -> Set.Set Position -> [Position]
 getValidNeighbors (r, c) grid isWalkableCondition v = catMaybes [right', down', left', up']

@@ -5,12 +5,12 @@ import Environment
       changeEnvironment,
       initEnvironment,
       cleanPercentage )
-import Element ()
-import Kid ( moveAll )
-import Bot ( moveAll )
-import BFS ()
-import BotWithKid ( moveAll )
-import Utils ( (|>) )
+import Src.Element ()
+import Src.Kid ( moveAll )
+import Src.Bot ( moveAll )
+import Core.Bfs ()
+import Src.BotWithKid ( moveAll )
+import Core.Utils ( (|>) )
 
 type Time = Int
 
@@ -32,10 +32,10 @@ cleanPercent = cleanPercentage simEnvironment
 
 iteration::(Environment,Time) -> (Environment,Time)
 iteration (env,time)
-  |  time `mod` timeForRandomChange == 0 = (env |> changeEnvironment |> Bot.moveAll |> BotWithKid.moveAll
-   |> Kid.moveAll, 
+  |  time `mod` timeForRandomChange == 0 = (env |> changeEnvironment |> Src.Bot.moveAll |> Src.BotWithKid.moveAll
+   |> Src.Kid.moveAll, 
  time + 1)
-  |  otherwise = (env |> Bot.moveAll |> BotWithKid.moveAll |> Kid.moveAll, time + 1)
+  |  otherwise = (env |> Src.Bot.moveAll |> Src.BotWithKid.moveAll |> Src.Kid.moveAll, time + 1)
 
 simulate::Environment -> Environment
 simulate env = fst (simulate' (env, 0))

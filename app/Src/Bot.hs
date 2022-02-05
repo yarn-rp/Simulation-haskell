@@ -1,18 +1,18 @@
-module Bot  where 
+module Src.Bot  where 
 import Environment
     ( Environment(kidsInJail, kids, botsWithKid, empties, dirts, bots),
       getElementAtPosition )
-import Element
+import Src.Element
     ( Element(Corral, BotWithKid, Bot, EmptyCell, Kid, Dirt, pos),
       Position )
-import Utils ( removeItem, manhattanDistance, (|>), headSafe )
+import Core.Utils ( removeItem, manhattanDistance, (|>), headSafe )
 import Data.List ( sortOn )
-import BFS ( bfsSearch )
+import Core.Bfs ( bfsSearch )
 
 
 moveAll:: Environment -> Environment
 moveAll environment = 
-    foldl Bot.move environment (bots environment)
+    foldl Src.Bot.move environment (bots environment)
 
 sortTuplesDistances :: Ord a1 => (a2, a1) -> (a3, a1) -> Ordering
 sortTuplesDistances (a1, b1) (a2, b2) = compare b1 b2
@@ -26,7 +26,7 @@ nearestDirt env pos = nearestPositionInCollection env pos (dirts env)
 nearestPositionInCollection::Environment -> Position  -> [Element] -> Maybe Element
 nearestPositionInCollection env initialPos collection = let elementWithDistances = map (\element -> (element, manhattanDistance initialPos (pos element)) ) collection
     in sortOn snd elementWithDistances
-    |> headSafe -- devuelve el kid
+    |> headSafe
     |> fmap fst
   
 

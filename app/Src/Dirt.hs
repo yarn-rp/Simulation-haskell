@@ -1,8 +1,8 @@
-module Dirt where 
+module Src.Dirt where 
 
 import Environment ( Environment(dirts, empties, kids) )
-import Element ( Element(EmptyCell, Dirt, pos), first, second )
-import Utils ( removeItem, pickRandom, manhattanDistance )
+import Src.Element ( Element(EmptyCell, Dirt, pos), first, second )
+import Core.Utils ( removeItem, pickRandom, manhattanDistance )
 
 isDirt:: Element -> Bool
 isDirt element = case element of

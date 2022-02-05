@@ -27,7 +27,7 @@ executable haskell-simulation
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules:          Environment, Bot, Element, Kid , Obstacle, Dirt, BotWithKid, Simulation, Utils, BFS, BotAgentV2
+    other-modules:          Environment, Src.Bot, Src.Element, Src.Kid , Src.Obstacle, Src.Dirt, Src.BotWithKid, Simulation, Core.Utils, Core.Bfs, Src.BotAgentV2
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:

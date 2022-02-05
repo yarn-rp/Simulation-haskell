@@ -1,14 +1,14 @@
-module Kid (moveAll) where 
+module Src.Kid (moveAll) where 
 import Environment
     ( Environment(empties, obstacles, kids), getElementAtPosition )
-import Element
+import Src.Element
     ( Element(Obstacle, Kid, EmptyCell, pos),
       Position,
       isNear,
       directionToMove )
-import Utils ( removeItem, pickRandom )
-import Obstacle ( move )
-import Dirt ( generateInSquare )
+import Core.Utils ( removeItem, pickRandom )
+import Src.Obstacle 
+import Src.Dirt 
 
 
 tryGoToPosition:: Environment -> Element -> Position -> Environment
@@ -19,7 +19,7 @@ tryGoToPosition environment kid position = let element = getElementAtPosition en
             (_,_,EmptyCell(_,_)) -> let envStillClean =  environment {
                 empties = removeItem element (empties environment) ++ [ EmptyCell (pos kid)],
                 kids = removeItem kid (kids environment) ++ [ Kid (pos element)]
-                } in Dirt.generateInSquare envStillClean element
+                } in Src.Dirt.generateInSquare envStillClean element
             (_,_,_) -> environment
 
 
@@ -45,13 +45,13 @@ move:: Environment -> Element -> Environment
 move environment kid = 
         let element = getRandomPosition environment kid
             in case element of
-                (EmptyCell (_,_)) -> Kid.tryGoToPosition environment kid (pos element)
+                (EmptyCell (_,_)) -> Src.Kid.tryGoToPosition environment kid (pos element)
                 (Obstacle (n,m)) -> let direction = directionToMove kid (n,m)
-                                    in let envWithObstaclesMoved = Obstacle.move environment (Obstacle(n,m)) direction 
-                                    in Kid.tryGoToPosition envWithObstaclesMoved  kid (pos element)
+                                    in let envWithObstaclesMoved = Src.Obstacle.move environment (Obstacle(n,m)) direction 
+                                    in Src.Kid.tryGoToPosition envWithObstaclesMoved  kid (pos element)
                 _ -> environment
 
 
 moveAll:: Environment -> Environment
 moveAll environment = 
-    foldl Kid.move environment (kids environment)
+    foldl Src.Kid.move environment (kids environment)

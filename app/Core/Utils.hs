@@ -1,4 +1,4 @@
-module Utils where
+module Core.Utils where
 import System.IO.Unsafe ( unsafePerformIO )  -- be careful!                                          
 import System.Random ( getStdRandom, Random(randomR) )
 
@@ -7,6 +7,15 @@ removeItem :: Eq a => a -> [a] -> [a]
 removeItem _ []                 = []
 removeItem x (y:ys) | x == y    = removeItem x ys
                     | otherwise = y : removeItem x ys
+
+removeWhere :: (t -> Bool) -> [t] -> [t]
+removeWhere _ [] = []
+removeWhere p xs
+        |   p y = ys 
+        |   otherwise = y:removeWhere p ys
+        where
+            y:ys = xs
+
 
 mean:: [Float] -> Float
 mean items = sum items / total
