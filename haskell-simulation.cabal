@@ -1,0 +1,41 @@
+cabal-version:      2.4
+name:               haskell-simulation
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Yansaro Rodriguez Paez
+maintainer:         61998848+yarn-rp@users.noreply.github.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+executable haskell-simulation
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:          Environment, Bot, Element, Kid , Obstacle, Dirt, BotWithKid, Simulation, Utils, BFS, BotAgentV2
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base ^>= 4.14.3.0,
+        random ^>= 1.2.1,
+        mtl ^>= 2.2.2,
+        array ^>= 0.5.4.0,
+        containers ^>= 0.6.5.1
+    hs-source-dirs:   app
+    default-language: Haskell2010
