@@ -36,10 +36,6 @@ getRandomPosition environment kid
     | otherwise = kid
 
 
-deleteKid:: Environment -> Cell -> Environment 
-deleteKid environment kid = 
-        environment {kids = removeItem kid (kids environment)}
-
 walk:: Environment -> Cell -> Environment
 walk environment kid = 
         let element = getRandomPosition environment kid
@@ -50,7 +46,11 @@ walk environment kid =
                                     in Src.Kid.tryGoToPosition envWithObstaclesMoved  kid (pos element)
                 _ -> environment
 
-
 walkAll:: Environment -> Environment
 walkAll environment = 
     foldl Src.Kid.walk environment (kids environment)
+
+
+deleteKid:: Environment -> Cell -> Environment 
+deleteKid environment kid = 
+        environment {kids = removeItem kid (kids environment)}

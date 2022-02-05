@@ -1,0 +1,2007 @@
+Build profile: -w ghc-8.10.7 -O1
+In order, the following will be built (use -v for more details):
+ - haskell-simulation-0.1.0.0 (exe:haskell-simulation) (file README.md changed)
+Preprocessing executable 'haskell-simulation' for haskell-simulation-0.1.0.0..
+Building executable 'haskell-simulation' for haskell-simulation-0.1.0.0..
+[11 of 12] Compiling Simulation       ( app/Simulation.hs, /Users/apple/Documents/School/Declarativa/haskell-project/haskell-Yansaro-Rodriguez-Paez/dist-newstyle/build/x86_64-osx/ghc-8.10.7/haskell-simulation-0.1.0.0/x/haskell-simulation/build/haskell-simulation/haskell-simulation-tmp/Simulation.o )
+[12 of 12] Compiling Main             ( app/Main.hs, /Users/apple/Documents/School/Declarativa/haskell-project/haskell-Yansaro-Rodriguez-Paez/dist-newstyle/build/x86_64-osx/ghc-8.10.7/haskell-simulation-0.1.0.0/x/haskell-simulation/build/haskell-simulation/haskell-simulation-tmp/Main.o ) [Simulation changed]
+Linking /Users/apple/Documents/School/Declarativa/haskell-project/haskell-Yansaro-Rodriguez-Paez/dist-newstyle/build/x86_64-osx/ghc-8.10.7/haskell-simulation-0.1.0.0/x/haskell-simulation/build/haskell-simulation/haskell-simulation ...
+79.06976
+Up to date
+100.0
+Up to date
+18.518517
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+40.625
+Up to date
+12.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+91.42857
+Up to date
+0.0
+Up to date
+43.75
+Up to date
+5.263153
+Up to date
+100.0
+Up to date
+20.0
+Up to date
+77.14285
+Up to date
+8.333328
+Up to date
+16.666672
+Up to date
+42.85714
+Up to date
+32.432434
+Up to date
+90.69768
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+59.523808
+Up to date
+100.0
+Up to date
+75.0
+Up to date
+43.75
+Up to date
+58.62069
+Up to date
+100.0
+Up to date
+91.666664
+Up to date
+95.0
+Up to date
+100.0
+Up to date
+75.675674
+Up to date
+40.74074
+Up to date
+41.02564
+Up to date
+93.75
+Up to date
+42.5
+Up to date
+7.1428604
+Up to date
+85.0
+Up to date
+51.28205
+Up to date
+100.0
+Up to date
+62.22222
+Up to date
+60.0
+Up to date
+97.674416
+Up to date
+0.0
+Up to date
+51.219513
+Up to date
+78.37838
+Up to date
+25.0
+Up to date
+100.0
+Up to date
+28.0
+Up to date
+11.111107
+Up to date
+44.444443
+Up to date
+31.707314
+Up to date
+39.285713
+Up to date
+100.0
+Up to date
+45.0
+Up to date
+88.888885
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+14.814812
+Up to date
+73.33333
+Up to date
+42.85714
+Up to date
+76.08696
+Up to date
+27.777779
+Up to date
+73.33333
+Up to date
+100.0
+Up to date
+38.709675
+Up to date
+97.14286
+Up to date
+100.0
+Up to date
+9.677422
+Up to date
+100.0
+Up to date
+92.5
+Up to date
+75.0
+Up to date
+100.0
+Up to date
+28.947372
+Up to date
+51.515152
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+95.34884
+Up to date
+100.0
+Up to date
+37.5
+Up to date
+67.741936
+Up to date
+95.0
+Up to date
+17.391304
+Up to date
+77.5
+Up to date
+44.186043
+Up to date
+60.0
+Up to date
+51.72414
+Up to date
+82.051285
+Up to date
+100.0
+Up to date
+89.3617
+Up to date
+78.125
+Up to date
+74.19355
+Up to date
+100.0
+Up to date
+95.12195
+Up to date
+100.0
+Up to date
+94.871796
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+48.64865
+Up to date
+13.333336
+Up to date
+10.0
+Up to date
+100.0
+Up to date
+19.230774
+Up to date
+31.25
+Up to date
+51.35135
+Up to date
+51.72414
+Up to date
+78.26087
+Up to date
+29.629631
+Up to date
+100.0
+Up to date
+27.5
+Up to date
+100.0
+Up to date
+16.666672
+Up to date
+70.37037
+Up to date
+30.952385
+Up to date
+34.482758
+Up to date
+10.344826
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+14.814812
+Up to date
+16.666672
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+30.0
+Up to date
+100.0
+Up to date
+60.869564
+Up to date
+100.0
+Up to date
+53.48837
+Up to date
+70.731705
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+71.111115
+Up to date
+0.0
+Up to date
+18.75
+Up to date
+58.974358
+Up to date
+100.0
+Up to date
+66.666664
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+65.11628
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+76.47059
+Up to date
+56.09756
+Up to date
+100.0
+Up to date
+79.48718
+Up to date
+81.818184
+Up to date
+33.33333
+Up to date
+97.560974
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+59.523808
+Up to date
+51.851852
+Up to date
+71.42857
+Up to date
+86.04651
+Up to date
+100.0
+Up to date
+82.85714
+Up to date
+100.0
+Up to date
+4.347824
+Up to date
+100.0
+Up to date
+46.153843
+Up to date
+59.523808
+Up to date
+72.22222
+Up to date
+68.42105
+Up to date
+90.0
+Up to date
+100.0
+Up to date
+20.0
+Up to date
+100.0
+Up to date
+19.354836
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+43.18182
+Up to date
+15.7894745
+Up to date
+72.22222
+Up to date
+100.0
+Up to date
+86.666664
+Up to date
+6.666664
+Up to date
+41.37931
+Up to date
+73.91304
+Up to date
+13.04348
+Up to date
+100.0
+Up to date
+33.33333
+Up to date
+57.894737
+Up to date
+91.17647
+Up to date
+100.0
+Up to date
+87.5
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+33.33333
+Up to date
+100.0
+Up to date
+70.588234
+Up to date
+57.142857
+Up to date
+30.303032
+Up to date
+20.512817
+Up to date
+68.75
+Up to date
+93.75
+Up to date
+40.909092
+Up to date
+100.0
+Up to date
+62.162163
+Up to date
+21.875
+Up to date
+21.428574
+Up to date
+100.0
+Up to date
+48.888885
+Up to date
+30.0
+Up to date
+20.588234
+Up to date
+62.857143
+Up to date
+56.09756
+Up to date
+100.0
+Up to date
+17.647057
+Up to date
+10.714287
+Up to date
+100.0
+Up to date
+79.31035
+Up to date
+83.33333
+Up to date
+23.07692
+Up to date
+22.727272
+Up to date
+100.0
+Up to date
+46.666664
+Up to date
+8.0
+Up to date
+37.931038
+Up to date
+100.0
+Up to date
+11.428574
+Up to date
+42.85714
+Up to date
+100.0
+Up to date
+84.210526
+Up to date
+65.11628
+Up to date
+27.272728
+Up to date
+58.62069
+Up to date
+75.60976
+Up to date
+73.33333
+Up to date
+100.0
+Up to date
+72.72727
+Up to date
+55.555553
+Up to date
+57.77778
+Up to date
+18.75
+Up to date
+92.5
+Up to date
+25.925926
+Up to date
+79.06976
+Up to date
+5.0
+Up to date
+100.0
+Up to date
+16.666672
+Up to date
+41.935486
+Up to date
+20.0
+Up to date
+21.21212
+Up to date
+100.0
+Up to date
+14.705887
+Up to date
+70.0
+Up to date
+14.285713
+Up to date
+100.0
+Up to date
+30.303032
+Up to date
+11.111107
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+50.0
+Up to date
+97.14286
+Up to date
+42.307693
+Up to date
+79.545456
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+30.769226
+Up to date
+77.77778
+Up to date
+58.82353
+Up to date
+100.0
+Up to date
+22.58065
+Up to date
+81.25
+Up to date
+75.60976
+Up to date
+93.478264
+Up to date
+36.84211
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+3.8461533
+Up to date
+75.0
+Up to date
+42.85714
+Up to date
+34.14634
+Up to date
+50.0
+Up to date
+67.85715
+Up to date
+100.0
+Up to date
+20.0
+Up to date
+97.4359
+Up to date
+89.47369
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+86.111115
+Up to date
+100.0
+Up to date
+7.6923065
+Up to date
+40.54054
+Up to date
+100.0
+Up to date
+43.333332
+Up to date
+100.0
+Up to date
+35.0
+Up to date
+51.42857
+Up to date
+93.478264
+Up to date
+100.0
+Up to date
+65.0
+Up to date
+58.064518
+Up to date
+12.5
+Up to date
+100.0
+Up to date
+67.391304
+Up to date
+100.0
+Up to date
+58.333336
+Up to date
+100.0
+Up to date
+94.871796
+Up to date
+42.424244
+Up to date
+81.25
+Up to date
+39.285713
+Up to date
+71.42857
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+24.0
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+68.181816
+Up to date
+36.666668
+Up to date
+37.03704
+Up to date
+100.0
+Up to date
+26.666664
+Up to date
+100.0
+Up to date
+69.44444
+Up to date
+100.0
+Up to date
+82.85714
+Up to date
+100.0
+Up to date
+66.666664
+Up to date
+60.0
+Up to date
+60.714287
+Up to date
+60.60606
+Up to date
+100.0
+Up to date
+76.74419
+Up to date
+92.10526
+Up to date
+79.545456
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+94.73684
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+81.57895
+Up to date
+72.5
+Up to date
+97.22222
+Up to date
+89.189186
+Up to date
+43.75
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+37.837837
+Up to date
+34.285713
+Up to date
+88.23529
+Up to date
+14.705887
+Up to date
+100.0
+Up to date
+25.0
+Up to date
+94.5946
+Up to date
+60.869564
+Up to date
+100.0
+Up to date
+78.78788
+Up to date
+19.230774
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+97.674416
+Up to date
+81.818184
+Up to date
+29.629631
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+84.09091
+Up to date
+70.0
+Up to date
+100.0
+Up to date
+72.22222
+Up to date
+100.0
+Up to date
+36.0
+Up to date
+94.871796
+Up to date
+11.538467
+Up to date
+48.64865
+Up to date
+92.68293
+Up to date
+100.0
+Up to date
+75.86207
+Up to date
+38.636364
+Up to date
+100.0
+Up to date
+76.666664
+Up to date
+100.0
+Up to date
+95.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+40.625
+Up to date
+100.0
+Up to date
+34.090904
+Up to date
+79.06976
+Up to date
+60.526314
+Up to date
+86.48649
+Up to date
+97.560974
+Up to date
+100.0
+Up to date
+72.97298
+Up to date
+53.846153
+Up to date
+84.61539
+Up to date
+42.424244
+Up to date
+4.1666718
+Up to date
+97.22222
+Up to date
+29.629631
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+22.222221
+Up to date
+86.666664
+Up to date
+100.0
+Up to date
+81.39535
+Up to date
+100.0
+Up to date
+40.625
+Up to date
+75.0
+Up to date
+10.526314
+Up to date
+87.80488
+Up to date
+46.666664
+Up to date
+3.7037048
+Up to date
+23.07692
+Up to date
+95.2381
+Up to date
+62.068966
+Up to date
+37.837837
+Up to date
+100.0
+Up to date
+82.5
+Up to date
+100.0
+Up to date
+32.258064
+Up to date
+72.97298
+Up to date
+100.0
+Up to date
+90.243904
+Up to date
+56.25
+Up to date
+100.0
+Up to date
+82.92683
+Up to date
+78.57143
+Up to date
+18.918922
+Up to date
+35.0
+Up to date
+4.545456
+Up to date
+89.13043
+Up to date
+100.0
+Up to date
+16.129036
+Up to date
+92.85714
+Up to date
+30.303032
+Up to date
+81.25
+Up to date
+100.0
+Up to date
+17.85714
+Up to date
+15.384613
+Up to date
+85.71429
+Up to date
+50.0
+Up to date
+40.74074
+Up to date
+30.0
+Up to date
+100.0
+Up to date
+10.714287
+Up to date
+41.666668
+Up to date
+75.86207
+Up to date
+95.12195
+Up to date
+100.0
+Up to date
+41.666668
+Up to date
+68.181816
+Up to date
+100.0
+Up to date
+97.72727
+Up to date
+82.85714
+Up to date
+84.84848
+Up to date
+100.0
+Up to date
+26.82927
+Up to date
+15.0
+Up to date
+100.0
+Up to date
+39.393936
+Up to date
+50.0
+Up to date
+100.0
+Up to date
+56.666668
+Up to date
+97.297295
+Up to date
+24.0
+Up to date
+65.789474
+Up to date
+71.05263
+Up to date
+100.0
+Up to date
+25.0
+Up to date
+100.0
+Up to date
+88.888885
+Up to date
+94.44444
+Up to date
+100.0
+Up to date
+39.999996
+Up to date
+9.677422
+Up to date
+94.73684
+Up to date
+87.09677
+Up to date
+29.411766
+Up to date
+5.263153
+Up to date
+100.0
+Up to date
+4.0
+Up to date
+55.813953
+Up to date
+57.77778
+Up to date
+95.74468
+Up to date
+34.210526
+Up to date
+92.30769
+Up to date
+37.931038
+Up to date
+100.0
+Up to date
+6.666664
+Up to date
+100.0
+Up to date
+18.918922
+Up to date
+24.0
+Up to date
+100.0
+Up to date
+65.21739
+Up to date
+42.424244
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+97.5
+Up to date
+100.0
+Up to date
+44.186043
+Up to date
+100.0
+Up to date
+51.515152
+Up to date
+52.77778
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+16.666672
+Up to date
+87.5
+Up to date
+100.0
+Up to date
+80.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+36.363636
+Up to date
+16.0
+Up to date
+100.0
+Up to date
+71.05263
+Up to date
+36.363636
+Up to date
+10.526314
+Up to date
+28.947372
+Up to date
+100.0
+Up to date
+77.27273
+Up to date
+82.608696
+Up to date
+100.0
+Up to date
+37.5
+Up to date
+7.4074097
+Up to date
+100.0
+Up to date
+35.89743
+Up to date
+20.0
+Up to date
+100.0
+Up to date
+90.0
+Up to date
+100.0
+Up to date
+95.12195
+Up to date
+20.689651
+Up to date
+64.51613
+Up to date
+33.33333
+Up to date
+90.32258
+Up to date
+29.629631
+Up to date
+97.36842
+Up to date
+81.818184
+Up to date
+15.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+64.86487
+Up to date
+100.0
+Up to date
+37.2093
+Up to date
+31.428566
+Up to date
+45.714283
+Up to date
+57.575756
+Up to date
+94.871796
+Up to date
+0.0
+Up to date
+42.85714
+Up to date
+38.709675
+Up to date
+100.0
+Up to date
+53.57143
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+80.434784
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+19.354836
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+67.441864
+Up to date
+84.375
+Up to date
+60.975613
+Up to date
+55.0
+Up to date
+11.904762
+Up to date
+82.5
+Up to date
+37.142857
+Up to date
+45.238094
+Up to date
+19.230774
+Up to date
+100.0
+Up to date
+59.090908
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+17.391304
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+37.5
+Up to date
+16.666672
+Up to date
+34.14634
+Up to date
+51.35135
+Up to date
+68.965515
+Up to date
+0.0
+Up to date
+38.88889
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+37.837837
+Up to date
+85.71429
+Up to date
+68.965515
+Up to date
+27.02703
+Up to date
+25.80645
+Up to date
+54.545452
+Up to date
+0.0
+Up to date
+71.739136
+Up to date
+37.5
+Up to date
+100.0
+Up to date
+79.48718
+Up to date
+58.536587
+Up to date
+86.48649
+Up to date
+100.0
+Up to date
+97.72727
+Up to date
+35.13514
+Up to date
+65.0
+Up to date
+8.695648
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+81.818184
+Up to date
+33.33333
+Up to date
+66.666664
+Up to date
+100.0
+Up to date
+7.4074097
+Up to date
+78.57143
+Up to date
+90.625
+Up to date
+25.714287
+Up to date
+72.97298
+Up to date
+97.22222
+Up to date
+5.0
+Up to date
+100.0
+Up to date
+65.51724
+Up to date
+100.0
+Up to date
+19.444443
+Up to date
+47.500004
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+83.33333
+Up to date
+84.61539
+Up to date
+100.0
+Up to date
+35.0
+Up to date
+80.0
+Up to date
+42.85714
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+31.25
+Up to date
+97.14286
+Up to date
+51.72414
+Up to date
+89.189186
+Up to date
+100.0
+Up to date
+87.5
+Up to date
+66.666664
+Up to date
+100.0
+Up to date
+33.33333
+Up to date
+92.68293
+Up to date
+42.307693
+Up to date
+41.37931
+Up to date
+0.0
+Up to date
+35.48387
+Up to date
+100.0
+Up to date
+39.999996
+Up to date
+84.375
+Up to date
+17.142853
+Up to date
+20.0
+Up to date
+10.344826
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+92.10526
+Up to date
+6.896553
+Up to date
+100.0
+Up to date
+94.44444
+Up to date
+27.586212
+Up to date
+100.0
+Up to date
+9.375
+Up to date
+80.645164
+Up to date
+75.0
+Up to date
+100.0
+Up to date
+88.23529
+Up to date
+69.04762
+Up to date
+84.375
+Up to date
+86.95652
+Up to date
+60.526314
+Up to date
+44.444443
+Up to date
+13.04348
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+64.51613
+Up to date
+68.42105
+Up to date
+70.96774
+Up to date
+50.0
+Up to date
+65.51724
+Up to date
+78.78788
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+17.5
+Up to date
+100.0
+Up to date
+97.297295
+Up to date
+13.63636
+Up to date
+100.0
+Up to date
+89.3617
+Up to date
+86.8421
+Up to date
+100.0
+Up to date
+50.0
+Up to date
+100.0
+Up to date
+66.666664
+Up to date
+15.151512
+Up to date
+12.903229
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+70.27027
+Up to date
+94.871796
+Up to date
+18.181816
+Up to date
+4.1666718
+Up to date
+58.333336
+Up to date
+100.0
+Up to date
+20.0
+Up to date
+32.352943
+Up to date
+0.0
+Up to date
+43.58974
+Up to date
+78.04878
+Up to date
+13.888893
+Up to date
+100.0
+Up to date
+41.860466
+Up to date
+29.629631
+Up to date
+38.235294
+Up to date
+22.222221
+Up to date
+100.0
+Up to date
+94.73684
+Up to date
+5.263153
+Up to date
+44.444443
+Up to date
+59.45946
+Up to date
+7.1428604
+Up to date
+18.518517
+Up to date
+27.272728
+Up to date
+65.90909
+Up to date
+89.13043
+Up to date
+57.5
+Up to date
+62.7907
+Up to date
+13.333336
+Up to date
+26.666664
+Up to date
+92.68293
+Up to date
+93.181816
+Up to date
+100.0
+Up to date
+69.76744
+Up to date
+80.0
+Up to date
+100.0
+Up to date
+73.17073
+Up to date
+100.0
+Up to date
+39.285713
+Up to date
+8.333328
+Up to date
+89.74359
+Up to date
+80.0
+Up to date
+61.290325
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+28.125
+Up to date
+37.837837
+Up to date
+78.94737
+Up to date
+100.0
+Up to date
+21.21212
+Up to date
+67.441864
+Up to date
+100.0
+Up to date
+75.86207
+Up to date
+26.666664
+Up to date
+100.0
+Up to date
+60.526314
+Up to date
+76.190475
+Up to date
+58.536587
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+75.60976
+Up to date
+57.575756
+Up to date
+100.0
+Up to date
+57.142857
+Up to date
+22.222221
+Up to date
+36.11111
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+97.87234
+Up to date
+74.4186
+Up to date
+89.74359
+Up to date
+82.5
+Up to date
+100.0
+Up to date
+56.81818
+Up to date
+59.523808
+Up to date
+78.26087
+Up to date
+58.82353
+Up to date
+100.0
+Up to date
+17.85714
+Up to date
+7.6923065
+Up to date
+4.0
+Up to date
+97.674416
+Up to date
+60.0
+Up to date
+100.0
+Up to date
+20.588234
+Up to date
+14.285713
+Up to date
+20.0
+Up to date
+84.61539
+Up to date
+10.526314
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+14.285713
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+97.22222
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+46.428574
+Up to date
+100.0
+Up to date
+28.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+93.478264
+Up to date
+97.560974
+Up to date
+100.0
+Up to date
+43.75
+Up to date
+97.4359
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+43.24324
+Up to date
+10.0
+Up to date
+97.4359
+Up to date
+89.3617
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+11.111107
+Up to date
+100.0
+Up to date
+87.80488
+Up to date
+100.0
+Up to date
+56.25
+Up to date
+46.153843
+Up to date
+25.0
+Up to date
+87.80488
+Up to date
+50.0
+Up to date
+100.0
+Up to date
+9.523811
+Up to date
+86.8421
+Up to date
+19.354836
+Up to date
+39.024387
+Up to date
+100.0
+Up to date
+56.81818
+Up to date
+100.0
+Up to date
+97.72727
+Up to date
+97.4359
+Up to date
+51.162792
+Up to date
+100.0
+Up to date
+48.571426
+Up to date
+4.761902
+Up to date
+86.04651
+Up to date
+36.11111
+Up to date
+89.13043
+Up to date
+97.674416
+Up to date
+13.333336
+Up to date
+51.162792
+Up to date
+51.612904
+Up to date
+24.324326
+Up to date
+100.0
+Up to date
+37.5
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+38.88889
+Up to date
+35.48387
+Up to date
+100.0
+Up to date
+68.75
+Up to date
+94.73684
+Up to date
+100.0
+Up to date
+51.612904
+Up to date
+55.555553
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+43.90244
+Up to date
+100.0
+Up to date
+13.793106
+Up to date
+33.33333
+Up to date
+100.0
+Up to date
+48.484848
+Up to date
+62.162163
+Up to date
+38.235294
+Up to date
+50.0
+Up to date
+26.470589
+Up to date
+31.034485
+Up to date
+13.63636
+Up to date
+92.5
+Up to date
+11.111107
+Up to date
+93.478264
+Up to date
+55.555553
+Up to date
+69.565216
+Up to date
+100.0
+Up to date
+24.137932
+Up to date
+58.82353
+Up to date
+60.869564
+Up to date
+21.739128
+Up to date
+57.5
+Up to date
+60.0
+Up to date
+52.941177
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+48.717945
+Up to date
+33.33333
+Up to date
+100.0
+Up to date
+13.63636
+Up to date
+100.0
+Up to date
+97.87234
+Up to date
+100.0
+Up to date
+87.23404
+Up to date
+80.48781
+Up to date
+92.10526
+Up to date
+80.434784
+Up to date
+63.636364
+Up to date
+20.0
+Up to date
+97.5
+Up to date
+46.875
+Up to date
+8.695648
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+93.181816
+Up to date
+74.19355
+Up to date
+17.85714
+Up to date
+0.0
+Up to date
+100.0
+Up to date
+97.72727
+Up to date
+48.717945
+Up to date
+58.064518
+Up to date
+62.5
+Up to date
+36.11111
+Up to date
+54.83871
+Up to date
+100.0
+Up to date
+56.666668
+Up to date
+38.235294
+Up to date
+100.0
+Up to date
+66.666664
+Up to date
+100.0
+Up to date
+17.85714
+Up to date
+62.068966
+Up to date
+51.28205
+Up to date
+52.272728
+Up to date
+100.0
+Up to date
+29.032257
+Up to date
+51.11111
+Up to date
+8.0
+Up to date
+75.60976
+Up to date
+93.023254
+Up to date
+100.0
+Up to date
+0.0
+Up to date
+36.84211
+Up to date
+80.95238
+Up to date
+80.0
+Up to date
+62.5
+Up to date
+87.09677
+Up to date
+88.57143
+Up to date
+37.837837
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+75.0
+Up to date
+25.641022
+Up to date
+100.0
+Up to date
+43.24324
+Up to date
+39.999996
+Up to date
+74.35897
+Up to date
+83.33333
+Up to date
+30.769226
+Up to date
+57.142857
+Up to date
+93.181816
+Up to date
+100.0
+Up to date
+71.42857
+Up to date
+10.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+100.0
+Up to date
+35.89743
+Up to date
+10.714287
+Up to date
+73.809525
+Up to date
+18.518517
+Up to date
+100.0
+Up to date
+10.0
+Up to date
+48.148148
+Up to date
+100.0
+Up to date
+64.51613
+Up to date
+24.0
+Up to date
+97.674416
+Up to date
+36.363636
+Up to date
+29.629631
+Up to date
+23.07692
+Up to date
+48.888885
+Up to date
+100.0
+Up to date
+64.10256
+Up to date
+100.0
+Up to date
+30.434784
+Up to date
+50.0
+Up to date
+23.529411
+Up to date
+82.97872
+Up to date
+40.74074
+Up to date
+97.297295
+Up to date
+77.5
+Up to date
+74.35897
+Up to date
+100.0
+Up to date
+86.111115
+Up to date
+100.0
+Up to date
+77.5
+Up to date
+23.529411
+Up to date
+80.645164

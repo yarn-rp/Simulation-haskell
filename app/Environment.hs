@@ -25,19 +25,6 @@ data Environment
       width :: Int,
       height:: Int
   }
-instance Show Environment where
-  show environment =
-    (bots environment
-    ++ kids environment
-    ++ jails environment
-    ++ kidsInCorral environment
-    ++ botsWithKid environment
-    ++ obstacles environment
-    ++ dirts environment
-    ++ empties environment)
-    |> sortOn pos
-    |> map show
-    |> show
 
 
 initEnvironment :: Int -> Int -> Environment
@@ -56,6 +43,19 @@ initEnvironment width height =
         }
   |> genCorrals |> genKids |> genObstacles |> genBots
        
+instance Show Environment where
+  show environment =
+    (bots environment
+    ++ kids environment
+    ++ jails environment
+    ++ kidsInCorral environment
+    ++ botsWithKid environment
+    ++ obstacles environment
+    ++ dirts environment
+    ++ empties environment)
+    |> sortOn pos
+    |> map show
+    |> show
 
 toEmptyCell::Cell -> Cell 
 toEmptyCell e = EmptyCell (pos e)

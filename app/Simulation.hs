@@ -16,7 +16,7 @@ type Time = Int
 
 
 environment :: Environment
-environment =  initEnvironment 10 10
+environment =  initEnvironment 7 7
 
 simEnvironment :: Environment
 simEnvironment = simulate environment
@@ -25,10 +25,10 @@ cleanPercent :: Float
 cleanPercent = cleanPercentage simEnvironment
 
 totalTime :: Time
-totalTime = 30
+totalTime = 25
 
 timeForRandomChange :: Time
-timeForRandomChange = 10
+timeForRandomChange = 5
 
 simulate::Environment -> Environment
 simulate env = fst (sim (env, 0))
