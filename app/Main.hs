@@ -5,6 +5,6 @@ import Environment
 
 main :: IO ()
 main = do 
-    print environment
-    print simEnvironment
+    -- print environment
+    -- print simEnvironment
     print cleanPercent

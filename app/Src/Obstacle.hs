@@ -1,12 +1,12 @@
-module Src.Obstacle (move)  where 
+module Src.Obstacle (walk)  where 
 
 import Environment
     ( Environment(empties, obstacles), getElementAtPosition )
-import Src.Element
-    ( Direction, Element(Obstacle, EmptyCell, pos), Position, add )
+import Src.Cell
+    ( Direction, Cell(Obstacle, EmptyCell, pos), Position, add )
 import Core.Utils ( removeItem )
 
-tryGoToPosition:: Environment -> Element -> Position -> Environment
+tryGoToPosition:: Environment -> Cell -> Position -> Environment
 tryGoToPosition environment obstacle position = let element = getElementAtPosition environment position in
     case element of 
         Nothing -> environment
@@ -25,11 +25,11 @@ shiftIfObstacle environment position direction =
             Nothing -> environment
             Just element -> 
                 case (environment ,element, direction) of
-                    (environment ,Obstacle(n,m), direction) ->  move environment (Obstacle(n,m)) direction
+                    (environment ,Obstacle(n,m), direction) ->  walk environment (Obstacle(n,m)) direction
                     (environment, _ , _) -> environment
 
-move:: Environment -> Element -> Direction -> Environment
-move environment obstacle direction =
+walk:: Environment -> Cell -> Direction -> Environment
+walk environment obstacle direction =
     let position = add obstacle direction
             in tryGoToPosition (shiftIfObstacle environment position direction) obstacle position
 

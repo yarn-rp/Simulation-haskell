@@ -5,20 +5,15 @@ import Environment
       changeEnvironment,
       initEnvironment,
       cleanPercentage )
-import Src.Element ()
-import Src.Kid ( moveAll )
-import Src.Bot ( moveAll )
+import Src.Cell ()
+import Src.Kid ( walkAll )
+import Src.Bot ( walkAll )
 import Core.Bfs ()
-import Src.BotWithKid ( moveAll )
+import Src.BotWithKid ( walkAll )
 import Core.Utils ( (|>) )
 
 type Time = Int
 
-totalTime :: Time
-totalTime = 30
-
-timeForRandomChange :: Time
-timeForRandomChange = 10
 
 environment :: Environment
 environment =  initEnvironment 10 10
@@ -29,18 +24,23 @@ simEnvironment = simulate environment
 cleanPercent :: Float
 cleanPercent = cleanPercentage simEnvironment
 
+totalTime :: Time
+totalTime = 30
 
-iteration::(Environment,Time) -> (Environment,Time)
-iteration (env,time)
-  |  time `mod` timeForRandomChange == 0 = (env |> changeEnvironment |> Src.Bot.moveAll |> Src.BotWithKid.moveAll
-   |> Src.Kid.moveAll, 
- time + 1)
-  |  otherwise = (env |> Src.Bot.moveAll |> Src.BotWithKid.moveAll |> Src.Kid.moveAll, time + 1)
+timeForRandomChange :: Time
+timeForRandomChange = 10
 
 simulate::Environment -> Environment
-simulate env = fst (simulate' (env, 0))
+simulate env = fst (sim (env, 0))
 
-simulate'::(Environment,Time)->(Environment,Time)
-simulate' (env, time) 
+sim::(Environment,Time)->(Environment,Time)
+sim (env, time) 
   | time == totalTime = (env,time)
-  | otherwise = (env,time) |> iteration |> simulate'
+  | otherwise = (env,time) |> iter |> sim
+
+iter::(Environment,Time) -> (Environment,Time)
+iter (env,time)
+  |  time `mod` timeForRandomChange == 0 = (env |> changeEnvironment |> Src.Bot.walkAll |> Src.BotWithKid.walkAll
+   |> Src.Kid.walkAll, 
+ time + 1)
+  |  otherwise = (env |> Src.Bot.walkAll |> Src.BotWithKid.walkAll |> Src.Kid.walkAll, time + 1)

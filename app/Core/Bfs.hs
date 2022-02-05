@@ -7,14 +7,14 @@ import           Data.Maybe (catMaybes)
 import qualified Data.Sequence as S
 import qualified Data.Set as Set
 import Data.List
-import Src.Element ( Element(Dirt), Position )
+import Src.Cell ( Cell(Dirt), Position )
 import Environment
     ( Environment(width, height), getElementAtPosition )
 import Core.Utils
 
 type Grid = Environment
 
-bfsSearch :: Grid -> Position -> (Element -> Bool) -> Position -> [Position]
+bfsSearch :: Grid -> Position -> (Cell -> Bool) -> Position -> [Position]
 bfsSearch grid start isWalkableCondition finish = evalState (bfsSearch' grid finish isWalkableCondition) initialState
   where
     initialState = BFSState (S.singleton start) Set.empty M.empty
@@ -25,7 +25,7 @@ data BFSState = BFSState
   , parents :: M.Map Position Position
   } deriving (Show)
 
-bfsSearch' :: Grid -> Position -> (Element -> Bool) -> State BFSState [Position]
+bfsSearch' :: Grid -> Position -> (Cell -> Bool) -> State BFSState [Position]
 bfsSearch' grid finish isWalkableCondition = do
   (BFSState q v p) <- get
   case S.viewl q of
@@ -46,7 +46,7 @@ unwindPath parentsMap currentPath = case M.lookup (head currentPath) parentsMap 
   Just parent -> unwindPath parentsMap (parent : currentPath)
 
 
-isWalkable':: Environment -> Position  -> (Element -> Bool)-> Bool
+isWalkable':: Environment -> Position  -> (Cell -> Bool)-> Bool
 isWalkable' env pos isWalkableCondition = let element = getElementAtPosition env pos in
     maybe False isWalkableCondition element
 
@@ -59,7 +59,7 @@ putDirtFirst env pos =
             (Dirt(_,_)) -> GT
             _ -> LT
 
-getValidNeighbors :: Position -> Grid -> (Element->Bool) -> Set.Set Position -> [Position]
+getValidNeighbors :: Position -> Grid -> (Cell->Bool) -> Set.Set Position -> [Position]
 getValidNeighbors (r, c) grid isWalkableCondition v = catMaybes [right', down', left', up']
   where
     (rowMax, colMax) = (width grid, height grid)
