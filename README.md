@@ -114,7 +114,7 @@ Ambos agentes buscan un elemento más carcano en el ambiente y se disponen a cam
 
 ### Operador "|>"
 
-Para este proyecto, se definió el operador de pipe(inspirado en F#), que corresponde a la sintaxis "|>", operador que fue usado en múltiples ocasiones a lo largo del proyecto para pasarle el previamente computado el output a una nueva función. Se decidió usar este operador muchas veces en el código por la expresividad que ganaba. Dicho esto, no se sustituyó el operador de composición de haskell, simplemente se usaron indistintamente en lid de buscar la mejor expresividad del programa.
+Para este proyecto, se definió el operador de pipe(inspirado en F#), que corresponde a la sintaxis "|>", operador que fue usado en múltiples ocasiones a lo largo del proyecto para pasarle el previamente computado output a una nueva función. Se decidió usar este operador muchas veces en el código por la expresividad que ganaba. Dicho esto, no se sustituyó el operador de composición de haskell, simplemente se usaron indistintamente en lid de buscar la mejor expresividad del programa.
 
 ``` haskell
 -- F# pipe operator
