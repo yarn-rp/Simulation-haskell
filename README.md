@@ -87,9 +87,11 @@ walkAll environment =
 `Obstacle` también tiene una función `walk`, la cual no se llama a nivel de simulación, solo es llamada por un `Kid` cuando este decide caminar en su dirección y desplazarlo. Esta función se hace recursiva, moviéndose en caso de encontrar un camino válido, y retornando el mismo `environment` en caso de no poder desplazarse más. En ese caso, el `Kid` que se intento mover en esa posición se mantiene en su mismo lugar.
 
 ## Modelos de Agentes considerados
+
 En este programa, se consideraron 2 tipos de agentes, nombrados `Bot` y `BotAgentV2`. Ambos agentes son agentes reactivos, los cuales no tienen en consideración un historial en la simulación para ejecutar su próximo movimiento.
 
 ### BotAgentV2
+
 `BotAgentV2` es un agente en nuestro ambiente que funciona bajo la siguiente heurística:
 
 1. Va hacia la suciedad más cercana y la limpia en caso de existir
@@ -109,6 +111,70 @@ En este programa, se consideraron 2 tipos de agentes, nombrados `Bot` y `BotAgen
 ## Ideas seguidas para la implementación
 
 Ambos agentes buscan un elemento más carcano en el ambiente y se disponen a caminar hacia él. Para ello, se desarrolló una función BFS visible en el modulo Core.Bfs el cual recibe un ambiente, una posición inicial, una final y devuelve un array de posiciones que revela uno de los caminos más cortos para alcanzar la posición. En el inicio, se tuvo pensado que esta función retornara todos los caminos mínimos de una posición a otra, pero se dificultó bastante en la parte de la implementación. La idea era crear otro agente, que se moviera hacia un niño sabiendo que camino tenía más suciedades para limpiar, ya que cuando este pasara por encima, iba a limpiarlas y disminuir la cantidad de suciedades del ambiente.
+
+### Operador "|>"
+
+Para este proyecto, se definió el operador de pipe(inspirado en F#), que corresponde a la sintaxis "|>", operador que fue usado en múltiples ocasiones a lo largo del proyecto para pasarle el previamente computado el output a una nueva función. Se decidió usar este operador muchas veces en el código por la expresividad que ganaba. Dicho esto, no se sustituyó el operador de composición de haskell, simplemente se usaron indistintamente en lid de buscar la mejor expresividad del programa.
+
+``` haskell
+-- F# pipe operator
+(|>) :: a -> (a -> b) -> b
+a |> b = b a
+
+
+headSafe :: [a] -> Maybe a
+headSafe []     = Nothing
+headSafe (x:xs) = Just x
+```
+
+### Ideas generales
+
+También se hizo uso extenso del tipo Maybe para operaciones que podrían devolver diferentes opciones, para luego hacer pattern matching usando la sintaxtis de case. Por ejemplo, veamos el código de cuando un robot intenta moverse hacia una posición.
+
+```haskell
+
+tryGoToPosition:: Environment -> Cell -> Position -> Environment
+tryGoToPosition environment bot position = let element = getElementAtPosition environment position in
+    let isKidInCorralInPosition = any ((\ a -> a == pos bot) . pos) (kidsInCorral environment)
+    in case element of
+        Nothing -> environment
+        Just element -> 
+            case (element,isKidInCorralInPosition) of
+                (EmptyCell(_,_),True) -> environment {
+                        empties = removeItem element (empties environment),
+                        bots = removeItem bot (bots environment) ++ [ Bot (pos element)]
+                    }
+                (EmptyCell(_,_),False) -> environment {
+                        empties = removeItem element (empties environment) ++ [ EmptyCell (pos bot)],
+                        bots = removeItem bot (bots environment) ++ [ Bot (pos element)]
+                    }
+                (Kid(_,_),True) -> environment {
+                        empties = removeItem element (empties environment),
+                        kids = removeItem element (kids environment),
+                        bots = removeItem bot (bots environment),
+                        botsWithKid = botsWithKid environment ++ [BotWithKid(pos element)]
+                    }
+                (Kid(_,_),False) -> environment {
+                        empties = removeItem element (empties environment) ++ [ EmptyCell (pos bot) ],
+                        kids = removeItem element (kids environment),
+                        bots = removeItem bot (bots environment),
+                        botsWithKid = botsWithKid environment ++ [BotWithKid(pos element)]
+                    }
+                (Dirt(_,_),True) -> environment {
+                        empties = removeItem element (empties environment),
+                        dirts = removeItem element (dirts environment),
+                        bots = removeItem bot (bots environment)  ++ [ Bot( pos element ) ]
+                    }
+                (Dirt(_,_),False) -> environment {
+                        empties = removeItem element (empties environment) ++ [ EmptyCell (pos bot) ],
+                        dirts = removeItem element (dirts environment),
+                        bots = removeItem bot (bots environment)  ++ [ Bot( pos element ) ]
+                    }
+                _ -> environment
+
+```
+
+## Link
 
 La implementación de este proyecto se encuentra disponible en <este repositorio> [https://github.com/yarn-rp/Simulation-haskell].
 
